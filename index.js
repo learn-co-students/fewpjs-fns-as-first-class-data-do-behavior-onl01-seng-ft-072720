@@ -7,7 +7,10 @@ function handleClick(e) {
   displayMessage(greet(timeString))
 }
 
-/* End Given Code, don't edit above here...*/
+function greet(string) {
+  const time = string.split(:).parseInt();
+    if(time < 12){
+      return "Good Morning"
+    }
 
-/* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
+}

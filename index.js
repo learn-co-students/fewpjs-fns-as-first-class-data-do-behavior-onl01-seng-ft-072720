@@ -8,9 +8,19 @@ function handleClick(e) {
 }
 
 function greet(string) {
-  const time = string.split(:).parseInt();
-    if(time < 12){
-      return "Good Morning"
+  const time = parseInt(string, 10);
+    if(time < 12) {
+      return "Good Morning";
+    } else if (time > 17)  {
+      return "Good Evening";
+    } else {
+      return "Good Afternoon";
     }
+  }
 
-}
+  function displayMessage(string){
+    document.getElementById("greeting").innerText = string 
+  }
+
+
+

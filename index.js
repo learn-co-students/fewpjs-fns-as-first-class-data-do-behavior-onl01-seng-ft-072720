@@ -15,10 +15,10 @@ function greet(time){
   if(hourNum < 12){
     return "Good Morning"
   }
-  if(hourNum > 17){
+  else if(hourNum > 17){
     return "Good Evening"
   }
-  if(12 < hourNum < 17){
+  else {
     return "Good Afternoon"
   }
 }
@@ -26,5 +26,5 @@ function greet(time){
 /* Write your implementation of displayMessage() */
 
 function displayMessage(message){
-  document.getElementById("greeting").innerHTML = `${message}`
+  document.getElementById("greeting").innerText = `${message}`
 }

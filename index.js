@@ -10,20 +10,22 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
-function greet(time) {
-  time = parseInt(time)
-  if (time < 12) {
-    greeting = "Good Morning"
-  } else if (time < 17) {
-    greeting = "Good Afternoon"
-  } else {
-    greeting = "Good Evening"
+function greet(string) {
+  let num = parseInt(string)
+  let phrase = ""
+  if ( num < 12){
+    phrase = "Good Morning";
   }
-  return greeting 
+  else if (num >= 17) {
+    phrase = "Good Evening";
+  }
+  else if (num > 12) {
+    phrase = "Good Afternoon";
+  }
+  return phrase 
 }
-/* Write your implementation of displayMessage() */
 
-function displayMessage(greeting) {
-  let greet = document.getElementById("greeting")
-  greet.innerText = greeting
+function displayMessage(string) {
+  let update = document.getElementById("greeting");
+  update.textContent = string;
 }
